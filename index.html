@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Wasonga</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/492108266d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            
+                <nav>
+                    <img src="images/logo.png" alt="logo" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" aria-hidden="true" onclick="openmenu()"></i>
+                </nav>
+                
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Kevin</span> Wasonga <br> From Kisumu, Kenya.</h1>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/users.png" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <h3> <p>Hello! I’m Kevin Wasonga, a dedicated Software Engineer with a passion for building scalable, user-centric applications. With a background in BSc Software Engineering, I specialize in turning complex problems into intuitive, efficient solutions. My expertise spans across backend development, frontend engineering, and database technologies, with a focus on clean, maintainable code and agile methodologies.</p> </h3>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>I have strong proficiency in designing user interfaces using Figma.</li>
+                            <li><span>Web Development</span><br>Proficient in creating dynamic, responsive, and user-centric web applications using modern technologies and best practices, including JavaScript and Golang (Go).</li>
+     
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Software Engineering Apprenticeship at Zone01, Kisumu.</li>
+                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Full Stack Software Development at Zone01 Kisumu</li>
+                            <li><span>2019</span><br>Bsc. Software Engineering from University of Eastern Africa, Baraton</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------services---------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Develoment</h2>
+                    <p>I specialize in developing dynamic and responsive web applications using Go (Golang), along with frameworks like React..</p>
+                    <a href="index.html%3Fname=kevin&amp;email=verdo16@proton.me&amp;message=just+testing+if+this+feature+is+working,+what+did+you+use+for+the+database+btw.html#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I specialize in UI/UX design, creating intuitive and visually engaging interfaces that boost user satisfaction..</p>
+                    <a href="index.html%3Fname=kevin&amp;email=verdo16@proton.me&amp;message=just+testing+if+this+feature+is+working,+what+did+you+use+for+the+database+btw.html#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Mobile App Development</h2>
+                    <p>I specialize in mobile app development, particularly in building high-quality, cross-platform apps using Flutter..</p>
+                    <a href="index.html%3Fname=kevin&amp;email=verdo16@proton.me&amp;message=just+testing+if+this+feature+is+working,+what+did+you+use+for+the+database+btw.html#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------portfolio----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg" alt="work-1">
+                    <div class="layer">
+                        <h3>GROUPIE-TRACKER</h3>
+                        <p>Groupie tracker is a web application built to display information about various artists and bands. It consumes data from a provided API, visualizes this data through a user-friendly interface, and includes client-server interactions for enhanced functionality.</p>
+                        <a href="https://github.com/kevwasonga/groupie-tracker"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg" alt="work-2">
+                    <div class="layer">
+                        <h3>TETRIS OPTIMISER</h3>
+                        <p> Tetris Optimizer is a Go-based project designed to take a set of tetrominoes and efficiently place them on the smallest possible square board. </p>
+                        <a href="https://github.com/kevwasonga/Tetris-optimizer"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg" alt="work-3">
+                    <div class="layer">
+                        <h3>GUESS IT</h3>
+                        <p>In this project, the goal is to use  math skills to predict a range for the next number in a sequence based on a given input.</p>
+                        <a href="https://github.com/kevwasonga/guess-it-1"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="index.html%3Fname=kevin&amp;email=verdo16@proton.me&amp;message=just+testing+if+this+feature+is+working,+what+did+you+use+for+the+database+btw.html#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------contact-------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa fa-paper-plane" aria-hidden="true"></i> kevinwasonga16@gmail.com</p>
+                    <p> <i class="fa fa-phone-square" aria-hidden="true"></i> +2547 07 152 873 </p>
+                    <div class="social-icons">
+                        <a href="https://x.com/kevol_"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/kevol_"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com/in/kevin-wasonga-3a9050317/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/kevwasonga"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/kevin&#32;wasonga&#32;CV.pdf" download class="btn btn-2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Kevin. @2024</p>
+        </div>
+    </div>
+
+
+    <script>
+        const tablinks = document.getElementsByClassName("tab-links");
+        const tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        const sidemenu = document.getElementById("sidemenu");
+
+        function openmenu () {
+            sidemenu.style.right = "0";
+        }
+        function closemenu () {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
