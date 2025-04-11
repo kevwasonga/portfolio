@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Kevin Wasonga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/492108266d.js" crossorigin="anonymous"></script>
 </head>
@@ -13,7 +16,7 @@
 <body>
     <div id="header">
         <div class="container">
-            
+
                 <nav>
                     <img src="images/logo.png" alt="logo" class="logo">
                     <ul id="sidemenu">
@@ -26,13 +29,13 @@
                     </ul>
                     <i class="fas fa-bars" aria-hidden="true" onclick="openmenu()"></i>
                 </nav>
-                
+
             <div class="header-text">
                 <p>Software Engineer</p>
                 <h1>Hi, I'm <span>Kevin</span> Wasonga <br> From Kisumu, Kenya.</h1>
             </div>
         </div>
-        
+
     </div>
 
     <!-- About -->
@@ -44,7 +47,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <h3> <p>Hello! I’m Kevin Wasonga, a dedicated Software Engineer with a passion for building scalable, user-centric applications. With a background in BSc Software Engineering, I specialize in turning complex problems into intuitive, efficient solutions. My expertise spans across backend development, frontend engineering, and database technologies, with a focus on clean, maintainable code and agile methodologies.</p> </h3>
+                    <p class="about-description">Hello! I'm Kevin Wasonga, a dedicated Software Engineer with a passion for building scalable, user-centric applications. With a background in BSc Software Engineering, I specialize in turning complex problems into intuitive, efficient solutions. My expertise spans across backend development, frontend engineering, and database technologies, with a focus on clean, maintainable code and agile methodologies.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -53,20 +56,20 @@
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>UI/UX</span><br>I have strong proficiency in designing user interfaces using Figma.</li>
-                            <li><span>Web Development</span><br>Proficient in creating dynamic, responsive, and user-centric web applications using modern technologies and best practices, including JavaScript and Golang (Go).</li>
-     
+                            <li><span>Web Development</span><br>Proficient in building dynamic, responsive, and user-centric web applications using modern technologies and best practices, including JavaScript, Golang (Go), and Django with Python.</li>
+
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2024 - Current</span><br>Software Engineering Apprenticeship at Zone01, Kisumu.</li>
-                           
+                            <li><span>2024 - Present</span><br>Software Engineering Apprenticeship at Zone01, Kisumu</li>
+
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2024</span><br>Full Stack Software Development at Zone01 Kisumu</li>
-                            <li><span>2019</span><br>Bsc. Software Engineering from University of Eastern Africa, Baraton</li>
+                            <li><span>2024 - Present</span><br>Full Stack Software Development at Zone01 Kisumu</li>
+                            <li><span>2019 - 2023</span><br>BSc. Software Engineering from University of Eastern Africa, Baraton</li>
                         </ul>
                     </div>
                 </div>
@@ -83,19 +86,49 @@
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Develoment</h2>
                     <p>I specialize in developing dynamic and responsive web applications using Go (Golang), along with frameworks like React..</p>
-                    <a href="index.html%3Fname=kevin&amp;email=verdo16@proton.me&amp;message=just+testing+if+this+feature+is+working,+what+did+you+use+for+the+database+btw.html#">Learn more</a>
+                    <a href="#" class="learn-more" data-service="web">Learn more</a>
+                    <div class="service-details" id="web-details">
+                        <p>My web development approach combines robust backend systems with intuitive frontend interfaces. I leverage:</p>
+                        <ul>
+                            <li>Go (Golang) for high-performance, scalable backend services</li>
+                            <li>React for dynamic, responsive user interfaces</li>
+                            <li>Django with Python for rapid development of feature-rich applications</li>
+                            <li>RESTful API design principles for seamless integration</li>
+                            <li>Modern JavaScript frameworks and libraries</li>
+                        </ul>
+                    </div>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop-simple"></i>
                     <h2>UI/UX Design</h2>
                     <p>I specialize in UI/UX design, creating intuitive and visually engaging interfaces that boost user satisfaction..</p>
-                    <a href="index.html%3Fname=kevin&amp;email=verdo16@proton.me&amp;message=just+testing+if+this+feature+is+working,+what+did+you+use+for+the+database+btw.html#">Learn more</a>
+                    <a href="#" class="learn-more" data-service="uiux">Learn more</a>
+                    <div class="service-details" id="uiux-details">
+                        <p>My UI/UX design process focuses on creating intuitive, user-centered experiences:</p>
+                        <ul>
+                            <li>User research and persona development</li>
+                            <li>Wireframing and prototyping with Figma</li>
+                            <li>Responsive design for all device types</li>
+                            <li>Accessibility-focused interface design</li>
+                            <li>User testing and iterative improvement</li>
+                        </ul>
+                    </div>
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store"></i>
                     <h2>Mobile App Development</h2>
                     <p>I specialize in mobile app development, particularly in building high-quality, cross-platform apps using Flutter..</p>
-                    <a href="index.html%3Fname=kevin&amp;email=verdo16@proton.me&amp;message=just+testing+if+this+feature+is+working,+what+did+you+use+for+the+database+btw.html#">Learn more</a>
+                    <a href="#" class="learn-more" data-service="mobile">Learn more</a>
+                    <div class="service-details" id="mobile-details">
+                        <p>My mobile app development expertise includes:</p>
+                        <ul>
+                            <li>Cross-platform development with Flutter</li>
+                            <li>Native iOS and Android development</li>
+                            <li>Offline-first architecture for reliable performance</li>
+                            <li>Integration with device features (camera, GPS, etc.)</li>
+                            <li>App Store optimization and deployment</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -106,28 +139,57 @@
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
+                <div class="work featured-work">
+                    <img src="images/netfix_image.jpg" alt="netfix-project" onerror="this.src='https://via.placeholder.com/600x400/1a1a2e/ff004f?text=Netfix'">
+                    <div class="layer">
+                        <span class="project-tag">Featured Project</span>
+                        <h3>NETFIX</h3>
+                        <p>Netfix is a Django-based service marketplace platform that allows companies to register and list services, and customers to request them. The platform features user authentication, service management, payment processing, and a responsive design. Customers can browse services, check them out for payment, and track their orders.</p>
+                        <div class="project-tech">
+                            <span>Django</span>
+                            <span>Python</span>
+                            <span>Bootstrap</span>
+                            <span>PostgreSQL</span>
+                            <span>Stripe</span>
+                        </div>
+                        <a href="https://github.com/kevwasonga/netfix" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
                 <div class="work">
                     <img src="images/work-1.jpg" alt="work-1">
                     <div class="layer">
                         <h3>GROUPIE-TRACKER</h3>
                         <p>Groupie tracker is a web application built to display information about various artists and bands. It consumes data from a provided API, visualizes this data through a user-friendly interface, and includes client-server interactions for enhanced functionality.</p>
-                        <a href="https://github.com/kevwasonga/groupie-tracker"><i class="fas fa-external-link-alt"></i></a>
+                        <div class="project-tech">
+                            <span>Go</span>
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://github.com/kevwasonga/groupie-tracker" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="images/work-2.jpg" alt="work-2">
                     <div class="layer">
                         <h3>TETRIS OPTIMISER</h3>
-                        <p> Tetris Optimizer is a Go-based project designed to take a set of tetrominoes and efficiently place them on the smallest possible square board. </p>
-                        <a href="https://github.com/kevwasonga/Tetris-optimizer"><i class="fas fa-external-link-alt"></i></a>
+                        <p>Tetris Optimizer is a Go-based project designed to take a set of tetrominoes and efficiently place them on the smallest possible square board.</p>
+                        <div class="project-tech">
+                            <span>Go</span>
+                            <span>Algorithms</span>
+                        </div>
+                        <a href="https://github.com/kevwasonga/Tetris-optimizer" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="images/work-3.jpg" alt="work-3">
                     <div class="layer">
                         <h3>GUESS IT</h3>
-                        <p>In this project, the goal is to use  math skills to predict a range for the next number in a sequence based on a given input.</p>
-                        <a href="https://github.com/kevwasonga/guess-it-1"><i class="fas fa-external-link-alt"></i></a>
+                        <p>In this project, the goal is to use math skills to predict a range for the next number in a sequence based on a given input.</p>
+                        <div class="project-tech">
+                            <span>Go</span>
+                            <span>Mathematics</span>
+                        </div>
+                        <a href="https://github.com/kevwasonga/guess-it-1" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
             </div>
@@ -140,7 +202,7 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa fa-paper-plane" aria-hidden="true"></i> kevinwasonga16@gmail.com</p>
+                    <p><i class="fa fa-paper-plane" aria-hidden="true"></i> kevinwasonga116@gmail.com</p>
                     <p> <i class="fa fa-phone-square" aria-hidden="true"></i> +2547 07 152 873 </p>
                     <div class="social-icons">
                         <a href="https://x.com/kevol_"><i class="fa-brands fa-facebook"></i></a>
@@ -148,20 +210,21 @@
                         <a href="https://www.linkedin.com/in/kevin-wasonga-3a9050317/"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://github.com/kevwasonga"><i class="fa-brands fa-github"></i></a>
                     </div>
-                    <a href="images/kevin&#32;wasonga&#32;CV.pdf" download class="btn btn-2">Download CV</a>
+                    <a href="images/Kevin&#32;Wasonga&#32;-&#32;Resume.pdf" download class="btn btn-2">Download Resume</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form id="contact-form">
                         <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn-2">Submit</button>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-2">Send Message</button>
                     </form>
+                    <div id="form-message" style="display: none; margin-top: 20px; padding: 15px; border-radius: 6px; text-align: center;"></div>
                 </div>
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Kevin. @2024</p>
+            <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Kevin. @2025</p>
         </div>
     </div>
 
@@ -171,10 +234,10 @@
         const tabcontents = document.getElementsByClassName("tab-contents")
 
         function opentab(tabname) {
-            for (tablink of tablinks) {
+            for (let tablink of tablinks) {
                 tablink.classList.remove("active-link");
             }
-            for (tabcontent of tabcontents) {
+            for (let tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
@@ -191,6 +254,92 @@
         function closemenu () {
             sidemenu.style.right = "-200px";
         }
+
+        // Add event listener to close menu when clicking on a link
+        document.querySelectorAll('#sidemenu li a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 600) {
+                    closemenu();
+                }
+            });
+        });
+
+        // Add resize event listener to handle navigation on window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 600) {
+                // Only reset the menu on desktop if it's not already visible
+                if (sidemenu.style.right === "-200px") {
+                    sidemenu.style.right = "0";
+                }
+            }
+        });
+
+        // Initialize the menu position based on screen size when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.innerWidth <= 600) {
+                sidemenu.style.right = "-200px";
+            }
+
+            // Handle Learn More functionality
+            const learnMoreLinks = document.querySelectorAll('.learn-more');
+            learnMoreLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const service = this.getAttribute('data-service');
+                    const details = document.getElementById(`${service}-details`);
+
+                    // Get the parent service card
+                    const serviceCard = this.closest('.services-list > div');
+
+                    // Toggle the current service details
+                    if (details.classList.contains('active')) {
+                        // Hide details
+                        details.classList.remove('active');
+                        this.classList.remove('active');
+                        this.textContent = 'Learn more';
+
+                        // Remove expanded class from service card
+                        serviceCard.classList.remove('expanded');
+
+                        // Use setTimeout to allow the animation to complete before changing display
+                        setTimeout(() => {
+                            details.style.display = 'none';
+                        }, 500);
+                    } else {
+                        // Hide all other service details first
+                        document.querySelectorAll('.service-details').forEach(detail => {
+                            detail.classList.remove('active');
+                            setTimeout(() => {
+                                if (!detail.classList.contains('active')) {
+                                    detail.style.display = 'none';
+                                }
+                            }, 500);
+                        });
+
+                        // Reset all learn more buttons
+                        document.querySelectorAll('.learn-more').forEach(btn => {
+                            btn.classList.remove('active');
+                            btn.textContent = 'Learn more';
+                            // Remove expanded class from all service cards
+                            btn.closest('.services-list > div').classList.remove('expanded');
+                        });
+
+                        // Add expanded class to current service card
+                        serviceCard.classList.add('expanded');
+
+                        // Show the selected service details
+                        details.style.display = 'block';
+                        // Use setTimeout to ensure display: block takes effect before adding the active class
+                        setTimeout(() => {
+                            details.classList.add('active');
+                        }, 10);
+
+                        this.classList.add('active');
+                        this.textContent = 'Show less';
+                    }
+                });
+            });
+        });
     </script>
 </body>
 
